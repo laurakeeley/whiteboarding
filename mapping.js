@@ -216,6 +216,23 @@
 //  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
 //     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
 
+//WHILE/////////////////////////////////////////////
+
+// function age(people) {
+//   let i = 0;
+//   let ages = [];
+//   while (i < people.length) {
+//     ages.push(people[i].age);
+//     i++;
+//   }
+//   console.log(ages);
+// }
+
+// age([
+//   { name: "Alice", age: 27 },
+//   { name: "Blane", age: 16 },
+// ]);
+
 //  7. Start with an array of numbers and create a new array with each number divided by 2.
 //     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
 
