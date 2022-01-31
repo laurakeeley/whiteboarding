@@ -299,18 +299,25 @@
 // 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
 //     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
 
-function doubledAge(people) {
-  let doubledAge = people.map((person) => person.age * 2);
-  console.log(doubledAge);
-}
+// function doubledAge(people) {
+//   let doubledAge = people.map((person) => person.age * 2);
+//   console.log(doubledAge);
+// }
 
-doubledAge([
-  { name: "Alice", age: 27 },
-  { name: "Blane", age: 16 },
-]);
+// doubledAge([
+//   { name: "Alice", age: 27 },
+//   { name: "Blane", age: 16 },
+// ]);
 
 // 10. Start with an array of numbers and create a new array with each number converted into a string.
 //     For example, [1, 2, 3] becomes ["1", "2", "3"].
+
+// function toStrings(numbers) {
+//   let strings = numbers.map((number) => number.toString());
+//   console.log(strings);
+// }
+
+// toStrings([1, 2, 3]);
 
 // SOLUTIONS (using while loop): https://gist.github.com/peterxjang/b9ac4390aad2301a2238efc95c904f3d
 // SOLUTIONS (using .each shortcut): https://gist.github.com/peterxjang/66598fd7cdbc67fe663624e217cebbaf
