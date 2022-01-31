@@ -60,6 +60,33 @@
 
 // Given an array of integers, find the first missing positive integer in linear time and constant space. In other words, find the lowest positive integer that does not exist in the array. The array can contain duplicates and negative numbers as well.
 
+//sort array smallest to largest
+//create a 'missing' variable
+//if number are neg or zero or duplicates, remove numbers from array
+//iterate through array if next number is previous numb +1, move on.
+//if next number is not prev num +1 that becomes the missing number.
+//return missing number
+
+// function missingNumber(array) {
+//   array.sort();
+//   array.forEach((number) => {
+//     if (number <= 0) {
+//       array.shift(number);
+//     }
+//   });
+//   let i = 0;
+//   let missing = 0;
+//   while (i < array.length) {
+//     if (array[i] === array[i + 1] - 1) {
+//       i++;
+//     } else {
+//       missing = array[i] + 1;
+//     }
+//   }
+//   console.log(missing);
+// }
+
+// missingNumber([3, 4, -1, 1]);
 // For example, the input [3, 4, -1, 1] should give 2. The input [1, 2, 0] should give 3.
 
 // You can modify the input array in-place.
