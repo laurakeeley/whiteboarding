@@ -71,8 +71,53 @@
 // }
 // upCase(["hello", "goodbye"]);
 
+/////////////////////////////////////////////////////////////////////////
+
 //  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 //     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
+
+//FOR LOOP/////////////////////////////////////////////////////////////////
+
+// function findNames(people) {
+//   let names = [];
+//   for (let index = 0; index < people.length; index++) {
+//     const person = people[index].name;
+//     names.push(person);
+//   }
+//   console.log(names);
+// }
+
+// findNames([
+//   { name: "Alice", age: 27 },
+//   { name: "Blane", age: 16 },
+// ]);
+
+//FOR EACH LOOP////////////////////////////////////////////////////////////
+
+// function findNames(people) {
+//   let names = [];
+//   people.forEach((person) => {
+//     names.push(person.name);
+//   });
+//   console.log(names);
+// }
+
+// findNames([
+//   { name: "Alice", age: 27 },
+//   { name: "Blane", age: 16 },
+// ]);
+
+//MAP METHOD////////////////////////////////////////////////////////////////
+
+// function findNames(people) {
+//   let names = people.map((person) => person.name);
+//   console.log(names);
+// }
+
+// findNames([
+//   { name: "Alice", age: 27 },
+//   { name: "Blane", age: 16 },
+// ]);
 
 //  4. Start with an array of numbers and create a new array with each number plus 7.
 //     For example, [1, 2, 3] becomes [8, 9, 10].
