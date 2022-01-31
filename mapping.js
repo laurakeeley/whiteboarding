@@ -1,7 +1,7 @@
 //  1. Start with an array of numbers and create a new array with each number times 3.
 //     For example, [1, 2, 3] becomes [3, 6, 9].
 
-//WHILE LOOP
+//WHILE LOOP//////////////////////////////////////////////////////
 // function timesThree(array) {
 //   let i = 0;
 //   while (i < array.length) {
@@ -13,7 +13,27 @@
 
 // timesThree([1, 2, 3]);
 
-//EACH LOOP
+//EACH LOOP///////////////////////////////////////////////////////
+
+// function timesThree(array) {
+//   let newArr = [];
+//   array.forEach((element) => {
+//     element *= 3;
+//     newArr.push(element);
+//   });
+//   console.log(newArr);
+// }
+
+// timesThree([1, 2, 3]);
+
+//MAP/////////////////////////////////////////////////////////////
+// let array = [1, 2, 3];
+
+// let newArr = array.map((num) => num * 3);
+
+// console.log(newArr);
+
+/////////////////////////////////////////////////////////////////////
 
 //  2. Start with an array of strings and create a new array with each string upcased.
 //     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
