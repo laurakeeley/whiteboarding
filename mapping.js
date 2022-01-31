@@ -53,15 +53,23 @@
 
 //FOR EACH LOOP/////////////////////////////////////////////////////////
 
-function upCase(array) {
-  let newArr = [];
-  array.forEach((element) => {
-    newArr.push(element.toUpperCase());
-  });
-  console.log(newArr);
-}
+// function upCase(array) {
+//   let newArr = [];
+//   array.forEach((element) => {
+//     newArr.push(element.toUpperCase());
+//   });
+//   console.log(newArr);
+// }
 
-upCase(["hello", "goodbye"]);
+// upCase(["hello", "goodbye"]);
+
+//MAPPING METHOD////////////////////////////////////////////////////////
+
+// function upCase(array) {
+//   let newArr = array.map((element) => element.toUpperCase());
+//   console.log(newArr);
+// }
+// upCase(["hello", "goodbye"]);
 
 //  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 //     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
