@@ -158,8 +158,60 @@
 
 // addSeven([1, 2, 3]);
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //  5. Start with an array of strings and create a new array with each string's length.
 //     For example, ["hello", "goodbye"] becomes [5, 7].
+
+//WHILE LOOP///////////////////////////////////////////////
+
+// function stringLength(strings) {
+//   let i = 0;
+//   let lengths = [];
+//   while (i < strings.length) {
+//     lengths.push(strings[i].length);
+//     i++;
+//   }
+//   console.log(lengths);
+// }
+
+// stringLength(["hello", "goodbye"]);
+
+//FOR LOOP////////////////////////////////////////////
+
+// function stringLengths(strings) {
+//   let lengths = [];
+//   for (let index = 0; index < strings.length; index++) {
+//     const length = strings[index].length;
+//     lengths.push(length);
+//   }
+//   console.log(lengths);
+// }
+
+// stringLengths(["hello", "goodbye"]);
+
+//FOR EACH///////////////////////////////////////////////
+
+// function stringLengths(strings) {
+//   let lengths = [];
+//   strings.forEach((string) => {
+//     lengths.push(string.length);
+//   });
+//   console.log(lengths);
+// }
+
+// stringLengths(["hello", "goodbye"]);
+
+//MAP METHOD////////////////////////////////////////////
+
+// function stringLengths(strings) {
+//   let lengths = strings.map((string) => string.length);
+//   console.log(lengths);
+// }
+
+// stringLengths(["hello", "goodbye"]);
+
+//////////////////////////////////////////////////////////////////////////////////////
 
 //  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
 //     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
