@@ -233,6 +233,22 @@
 //   { name: "Blane", age: 16 },
 // ]);
 
+//FOR LOOP/////////////////////////////////////////
+
+// function age(people) {
+//   let ages = [];
+//   for (let index = 0; index < people.length; index++) {
+//     const person = people[index];
+//     ages.push(people[index].age);
+//   }
+//   console.log(ages);
+// }
+
+// age([
+//   { name: "Alice", age: 27 },
+//   { name: "Blane", age: 16 },
+// ]);
+
 //  7. Start with an array of numbers and create a new array with each number divided by 2.
 //     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
 
