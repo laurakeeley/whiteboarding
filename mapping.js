@@ -38,6 +38,19 @@
 //  2. Start with an array of strings and create a new array with each string upcased.
 //     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
 
+//WHILE/FOR LOOP////////////////////////////////////////////////////////
+
+// function upcase(array) {
+//   let newArr = [];
+//   for (let index = 0; index < array.length; index++) {
+//     const word = array[index].toUpperCase();
+//     newArr.push(word);
+//   }
+//   console.log(newArr);
+// }
+
+// upcase(["hello", "goodbye"]);
+
 //  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 //     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"].
 
