@@ -23,26 +23,94 @@
 //  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
 //     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
 
+// let items = [
+//   { name: "chair", price: 100 },
+//   { name: "pencil", price: 1 },
+//   { name: "book", price: 4 },
+// ];
+// let bigTicketItems = items.filter(function (item) {
+//   return item.price > 5;
+// });
+
+// console.log(bigTicketItems);
+
 //  4. Start with an array of numbers and create a new array with only the even numbers.
 //     For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
+
+// let numbers = [2, 4, 5, 1, 8, 9, 7];
+// let evens = numbers.filter(function (number) {
+//   return number % 2 === 0;
+// });
+
+// console.log(evens);
 
 //  5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
 //     For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
 
+// let strings = ["a", "man", "a", "plan", "a", "canal", "panama"];
+// let shortLetters = strings.filter(function (word) {
+//   return word.length < 4;
+// });
+
+// console.log(shortLetters);
+
 //  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
 //     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
+
+// let items = [
+//   { name: "chair", price: 100 },
+//   { name: "pencil", price: 1 },
+//   { name: "book", price: 4 },
+// ];
+// let shortNames = items.filter(function (item) {
+//   return item.name.length < 6;
+// });
+
+// console.log(shortNames);
 
 //  7. Start with an array of numbers and create a new array with only the numbers less than 10.
 //     For example, [8, 23, 0, 44, 1980, 3] becomes [8, 0, 3].
 
+// let numbers = [8, 23, 0, 44, 1980, 3];
+// let lowNumbers = numbers.filter(function (num) {
+//   return num < 10;
+// });
+
+// console.log(lowNumbers);
+
 //  8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
 //     For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
+
+// let strings = ["big", "little", "good", "bad"];
+// let bStrings = strings.filter(function (string) {
+//   return string[0] === "b";
+// });
+
+// console.log(bStrings);
 
 //  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
 //     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
 
+// let items = [
+//   { name: "chair", price: 100 },
+//   { name: "pencil", price: 1 },
+//   { name: "book", price: 4 },
+// ];
+// let onSale = items.filter(function (item) {
+//   return item.price < 10;
+// });
+
+// console.log(onSale);
+
 // 10. Start with an array of numbers and create a new array with only the odd numbers.
 //     For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
+
+// let numbers = [2, 4, 5, 1, 8, 9, 7];
+// let oddNumbers = numbers.filter(function (number) {
+//   return number % 2 !== 0;
+// });
+
+// console.log(oddNumbers);
 
 // SOLUTIONS (using while loop): https://gist.github.com/peterxjang/7de16ed43ea506e98df3fa15074b84f8
 // SOLUTIONS (using .each shortcut): https://gist.github.com/peterxjang/a702894841c7018ed8c127b647ae21f8
