@@ -1,6 +1,25 @@
 //  1. Use a nested loop to convert an array of number pairs into a single flattened array.
 //     For example, [[1, 3], [8, 9], [2, 16]] becomes [1, 3, 8, 9, 2, 16].
 
+// let arrayOfArrays = [
+//   [1, 3],
+//   [8, 9],
+//   [2, 16],
+// ];
+// let i = 0;
+
+// let newArray = [];
+// while (i < arrayOfArrays.length) {
+//   let i2 = 0;
+//   while (i2 < arrayOfArrays[i].length) {
+//     newArray.push(arrayOfArrays[i][i2]);
+//     i2++;
+//   }
+//   i++;
+// }
+
+// console.log(newArray);
+
 //  2. Use a nested loop with two arrays of strings to create a new array of strings with each string combined.
 //     For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
 
