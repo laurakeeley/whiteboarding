@@ -35,23 +35,112 @@
 //  4. Start with an array of numbers and compute the the minumum number.
 //     For example, [5, 10, 8, 3, 9] becomes 3.
 
+// let numbers = [5, 10, 8, 3, 9];
+// let minimum = numbers.reduce(function (smallest, number) {
+//   if (number < smallest) {
+//     return number;
+//   } else {
+//     return smallest;
+//   }
+// }, numbers[0]);
+
+// console.log(minimum);
+
 //  5. Start with an array of strings and compute the total length of all the strings.
 //     For example, ["volleyball", "basketball", "badminton"] becomes 29.
+
+// let strings = ["volleyball", "basketball", "badminton"];
+// let total = strings.reduce(function (sum, string) {
+//   return (sum += string.length);
+// }, 0);
+
+// console.log(total);
 
 //  6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
 //     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
 
+// let items = [
+//   { name: "chair", price: 100 },
+//   { name: "pencil", price: 1 },
+//   { name: "book", price: 4 },
+// ];
+// let lowestPrice = items.reduce(function (cost, item) {
+//   if (item.price < cost.price) {
+//     return item;
+//   } else {
+//     return cost;
+//   }
+// }, items[0]);
+
+// console.log(lowestPrice);
+
 //  7. Start with an array of numbers and compute product of all the numbers.
 //     For example, [5, 10, 8, 3] becomes 1200.
+
+// let numbers = [5, 10, 8, 3];
+// let product = numbers.reduce(function (total, num) {
+//   return (total *= num);
+// }, 1);
+
+// console.log(product);
 
 //  8. Start with an array of strings and combine them all into a single string, separated by dashes.
 //     For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
 
+let strings = ["volleyball", "basketball", "badminton"];
+let combined = strings.reduce(function (total, string) {
+  return total + string + "-";
+}, "-");
+
+console.log(combined);
+
 //  9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
 //     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "book", price: 4}.
 
+// let items = [
+//   { name: "chair", price: 100 },
+//   { name: "pencil", price: 1 },
+//   { name: "book", price: 4 },
+//   { name: "pen", price: 3 },
+// ];
+// let shortestName = items[0];
+// items.forEach((item) => {
+//   if (item.name.length < shortestName.name.length) {
+//     shortestName = item;
+//   }
+//   return shortestName;
+// });
+
+// console.log(shortestName);
+
+// let items = [
+//   { name: "chair", price: 100 },
+//   { name: "pencil", price: 1 },
+//   { name: "book", price: 4 },
+//   { name: "pen", price: 3 },
+// ];
+
+// let shortestItemName = items.reduce(function (shortestName, item) {
+//   if (item.name.length < shortestName.name.length) {
+//     shortestName = item;
+//   }
+//   return shortestName;
+// }, items[0]);
+
+// console.log(shortestItemName);
+
 // 10. Start with an array of numbers and compute the maximum number.
 //     For example, [5, 10, 8, 3] becomes 10.
+
+// let numbers = [5, 10, 8, 3];
+// let max = numbers.reduce(function (biggestNum, num) {
+//   if (num > biggestNum) {
+//     biggestNum = num;
+//   }
+//   return biggestNum;
+// }, numbers[0]);
+
+// console.log(max);
 
 // SOLUTIONS (using while loop): https://gist.github.com/peterxjang/376c8931a48549889eb3c9bc091e9f43
 // SOLUTIONS (using .each shortcut): https://gist.github.com/peterxjang/379c9945774f51027750c59d6e4395df
