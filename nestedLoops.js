@@ -41,26 +41,71 @@
 //  3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
 //     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
 
-let array = ["a", "b", "c", "d"];
-let i = 0;
-let newArray = [];
-while (i < array.length) {
-  let i2 = 0;
-  while (i2 < array.length) {
-    if (array[i] !== array[i2]) {
-      newArray.push(array[i] + array[i2]);
-    }
-    i2++;
-  }
-  i++;
-}
+// let array = ["a", "b", "c", "d"];
+// let i = 0;
+// let newArray = [];
+// while (i < array.length) {
+//   let i2 = 0;
+//   while (i2 < array.length) {
+//     if (array[i] !== array[i2]) {
+//       newArray.push(array[i] + array[i2]);
+//     }
+//     i2++;
+//   }
+//   i++;
+// }
 
-console.log(newArray);
+// console.log(newArray);
+
 //  4. Use a nested loop to find the largest product of any two different numbers within a given array.
 //     For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
 
+let array = [5, -2, 1, -9, -7, 2, 6];
+// let largestProduct = 1;
+// let i = 0;
+// let product = 1;
+// while (i < array.length) {
+//   let i2 = 1;
+//   while (i2 < array.length) {
+//     if (i !== i2 && largestProduct < array[i] * array[i2]) {
+//       largestProduct = array[i] * array[i2];
+//     }
+//     i2++;
+//   }
+//   i++;
+// }
+
+// console.log(largestProduct);
+
 //  5. Use a nested loop to compute the sum of all the numbers in an array of number pairs.
 //     For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
+
+// let numbers = [
+//   [1, 3],
+//   [8, 9],
+//   [2, 16],
+// ];
+// let i = 0;
+// let sum = 0;
+// while (i < numbers.length) {
+//   let i2 = 0;
+//   while (i2 < numbers[i].length) {
+//     sum += numbers[i][i2];
+//     i2++;
+//   }
+//   i++;
+// }
+
+// console.log(sum);
+////////////////forEach////////////////////////////////////////
+// let sum = 0;
+// numbers.forEach((array) => {
+//   array.forEach((num) => {
+//     sum += num;
+//   });
+// });
+
+// console.log(sum);
 
 //  6. Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
 //     For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
