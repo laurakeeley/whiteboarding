@@ -139,21 +139,34 @@
 //  8. Use a nested loop to find the largest sum of any two different numbers within an array.
 //     For example, [1, 8, 3, 10] becomes 18.
 
-let array = [1, 8, 3, 10];
-let biggestSum = 0;
+// let array = [1, 8, 3, 10];
+// let biggestSum = 0;
 
-array.forEach((number) => {
-  array.forEach((num) => {
-    if (number !== num && biggestSum < number + num) {
-      biggestSum = number + num;
+// array.forEach((number) => {
+//   array.forEach((num) => {
+//     if (number !== num && biggestSum < number + num) {
+//       biggestSum = number + num;
+//     }
+//   });
+// });
+
+// console.log(biggestSum);
+
+//  9. Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
+//     For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
+
+let numbers = [2, 5, 3, 1, 0, 7, 11];
+let sumOfTen = [];
+
+numbers.forEach((number) => {
+  numbers.forEach((num) => {
+    if (number + num === 10 && number !== num) {
+      sumOfTen = [num, number];
     }
   });
 });
 
-console.log(biggestSum);
-
-//  9. Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
-//     For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
+console.log(sumOfTen);
 
 // 10. Use a nested loop to convert an array of string arrays into a single string.
 //     For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
