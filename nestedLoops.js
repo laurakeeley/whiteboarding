@@ -155,20 +155,30 @@
 //  9. Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
 //     For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
 
-let numbers = [2, 5, 3, 1, 0, 7, 11];
-let sumOfTen = [];
+// let numbers = [2, 5, 3, 1, 0, 7, 11];
+// let sumOfTen = [];
 
-numbers.forEach((number) => {
-  numbers.forEach((num) => {
-    if (number + num === 10 && number !== num) {
-      sumOfTen = [num, number];
-    }
-  });
-});
+// numbers.forEach((number) => {
+//   numbers.forEach((num) => {
+//     if (number + num === 10 && number !== num) {
+//       sumOfTen = [num, number];
+//     }
+//   });
+// });
 
-console.log(sumOfTen);
+// console.log(sumOfTen);
 
 // 10. Use a nested loop to convert an array of string arrays into a single string.
 //     For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
+
+let strings = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]];
+let newMiniArray = [];
+let finalArray = [];
+strings.forEach((miniArray) => {
+  newMiniArray.push(miniArray.join(""));
+});
+finalArray = newMiniArray.join("");
+
+console.log(finalArray);
 
 // SOLUTIONS: https://gist.github.com/peterxjang/af8985dc4fb07ea14b4bd6ba41cb08f8
