@@ -181,3 +181,172 @@
 // );
 
 /////////////////////////////////////////////////////////////////////////////////
+
+// Given a string, write a function that returns true if the “$” character is contained within the string or false if it is not.
+
+// Input: “i hate $ but i love money i know i know im crazy”
+// Output: true
+
+// Input: “abcdefghijklmnopqrstuvwxyz”
+// Output: false
+
+// iterate through each char and if '$' is found, return true.
+
+// function findIt(string) {
+//   let splitString = string.split("");
+//   splitString.forEach((char) => {
+//     if (char === "$") {
+//       console.log(true);
+//     } else {
+//       console.log(false);
+//     }
+//   });
+// }
+
+// // findIt("i hate $ but i love money i know i know im crazy");
+// findIt("abcdefghijklmnopqrstuvwxyz");
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+// Given a string, write a function that returns a copy of the original string that has every other character capitalized. (Capitalization should begin with the second character.)
+
+// Input: “hello, how are your porcupines today?”
+// Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
+
+// split string into Array.
+// iterate through
+// if index cannot be divisible by 2, it will be capitalized.Array
+
+// function everyOther(string) {
+//   let stringArr = string.split("");
+//   let upCase = [];
+//   let i = 0;
+//   while (i < stringArr.length) {
+//     if (i % 2 !== 0) {
+//       upCase.push(stringArr[i].toUpperCase());
+//       i++;
+//     } else {
+//       upCase.push(stringArr[i]);
+//       i++;
+//     }
+//   }
+//   return upCase.join("");
+// }
+
+// console.log(everyOther("hello, how are your porcupines today?"));
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+// Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+// Input: “abcdefghhijkkloooop”
+// Output: “h”
+
+// split string into array of individual characters
+// first var holds onto first element of array
+// if first character does not match 2nd character, variable becomes 2nd element
+// 2nd element is compared to 3rd element.
+// if 2nd element does not match 3rd element, variable becomes 3rd element.
+
+// function doubleChars(string) {
+//   let stringArr = string.split("");
+//   let i = 0;
+//   // let i2 = i + 1;
+//   while (i < stringArr.length) {
+//     if (stringArr[i] === stringArr[i + 1]) {
+//       return stringArr[i];
+//     } else {
+//       i++;
+//     }
+//   }
+// }
+
+// console.log(doubleChars("abcdefghhijkkloooop"));
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// Given a string, write a function that returns true if it is a palindrome, and false if it is not. (A palindrome is a word that reads the same both forward and backward.)
+
+// Input: “racecar”
+// Output: true
+
+// Input: “baloney”
+// Output: false
+
+// compare use reverse method on string if they're equal, palindrome is true.
+
+// function isPalindrome(string) {
+//   let palindrome = true;
+//   if (string === string.split("").reverse().join("")) {
+//     return palindrome;
+//   } else {
+//     palindrome = false;
+//   }
+//   return palindrome;
+// }
+
+// console.log(isPalindrome("racecar"));
+// console.log(isPalindrome("balogna"));
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+// Given two strings of equal length, write a function that returns the number of characters that are different between the two strings.
+
+// Input: "ABCDEFG", "ABCXEOG"
+// Output: 2
+
+// Explanation: While the A, B, C, E, and G are in the same place for both strings, they have different characters in the other spaces. Since there are 2 such spaces that are different (the D and F in the first string), we return 2.
+
+// Input: "ABCDEFG", "ABCDEFG",
+// Output: 0
+
+// create arrays from both strings
+// print out each letter, matching indeces
+// if chars match print MATCH!
+// add a count var.
+// if chars don't match count +1
+
+// function differentChars(string1, string2) {
+//   let count = 0;
+//   let string1Arr = string1.split("");
+//   let string2Arr = string2.split("");
+//   let i = 0;
+//   while (i < string1Arr.length) {
+//     if (string1Arr[i] !== string2Arr[i]) {
+//       count++;
+//     }
+//     i++;
+//   }
+//   return count;
+// }
+
+// console.log(differentChars("ABCDEFG", "ABCDEFG"));
+// console.log(differentChars("ABCDEFG", "ABCXEOG"));
+
+////////////////////////////////////////////////////////////////////////////////
+
+// Given a string of words, write a function that returns a new string that contains the words in reverse order.
+
+// Input: “popcorn is so cool isn’t it yeah i thought so”
+// Output: “so thought i yeah it isn’t cool so is popcorn”
+
+// create array from string, print array
+// print the last word in the array
+// put the last word in the array into a new array
+// iterate through array backwards, print each word
+// join array into string and print.
+
+// function reverseStrings(string) {
+//   let stringArr = string.split(" ");
+//   let i = stringArr.length - 1;
+//   let reverseArr = [];
+//   while (i >= 0) {
+//     reverseArr.push(stringArr[i]);
+//     i--;
+//   }
+//   return reverseArr.join(" ");
+// }
+
+// console.log(reverseStrings("popcorn is so cool isn't it yeah i thought so"));
+
+//////////////////////////////////////////////////////////////////////////////////////
