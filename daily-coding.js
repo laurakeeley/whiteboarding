@@ -112,3 +112,120 @@
 // In this example, assume nodes with the same value are the exact same node objects.
 
 // Do this in O(M + N) time (where M and N are the lengths of the lists) and constant space.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Given an array of strictly the characters 'R', 'G', and 'B', segregate the values of the array so that all the Rs come first, the Gs come second, and the Bs come last. You can only swap elements of the array.
+
+// Do this in linear time and in-place.
+
+// For example, given the array ['G', 'B', 'R', 'R', 'B', 'R', 'G'], it should become ['R', 'R', 'R', 'G', 'G', 'B', 'B'].
+
+// function sort(array) {
+//   let i = 1;
+//   array.forEach((letter) => {
+//     while (i < array.length) {
+//       if (letter === "G" && array[i] === "B") {
+//       }
+//     }
+//   });
+// }
+
+// sort(["G", "B", "R", "R", "B", "R", "G"]);
+
+// Given a mapping of digits to letters (as in a phone number), and a digit string, return all possible letters the number could represent. You can assume each valid number in the mapping is a single digit.
+
+// For example if {“2”: [“a”, “b”, “c”], 3: [“d”, “e”, “f”], …} then “23” should return [“ad”, “ae”, “af”, “bd”, “be”, “bf”, “cd”, “ce”, “cf"].
+
+// function lonelyinteger(a) {
+//   var i = 0;
+//   while (i < a.length) {
+//     var i2 = i + 1;
+//     while (i2 < a.length) {
+//       if (a[i] === a[i2]) {
+//         i++;
+//       } else {
+//         i2++;
+//       }
+//     }
+//   }
+//   console.log(a[i]);
+// }
+
+// lonelyinteger([1, 2, 3, 4, 3, 2, 1]);
+
+// Write a function that takes in two arrays of numbers and returns all the numbers that appear in both arrays.
+
+// input: [1,3,6,9], [1,2,5,9]
+// ouput: [1,9]
+
+// see if the first number matches, print true
+// if first num matches print that number
+// if first num matches push that num into new array
+// compare first num in first array to each num in 2nd array, any matches, push into new array
+// loop through first array and compare each number to 2nd array
+
+// function sameNums(nums1, nums2) {
+//   var matches = [];
+//   nums1.forEach((num) => {
+//     nums2.forEach((num2) => {
+//       if (num === num2) {
+//         matches.push(num);
+//       }
+//     });
+//   });
+//   console.log(matches);
+// }
+
+// sameNums([1, 3, 6, 9], [1, 2, 5, 9]);
+
+// Write a function that takes in an array of numbers and returns the largest product of any two numbers in the array.
+
+// [1, 7 ,8, 9, 3, 1];
+// output: 17
+
+// compare first number to every other number
+// print out each product of each sum - first number compared to each number
+// store product of first 2 numbers compare to product of each other number
+// compare sum of each of the first two numbers to each other sum, change if greater
+
+// [1, 7 ,8, 9, 3, 1]
+//           _  _
+
+// 17
+
+// function maxSum(arr) {
+//   var i = 0;
+//   var i2 = i + 1;
+//   var max = 0;
+//   while (i < arr.length) {
+//     if (arr[i] + arr[i2] > max) {
+//       max = arr[i] + arr[i2];
+//     }
+//     i++;
+//   }
+//   return max;
+// }
+
+// console.log(maxSum([1, 7, 8, 9, 3, 1]));
+
+function lonelyinteger(a) {
+  var unique = 0;
+  var i = 0;
+  while (i < a.length) {
+    var i2 = i + 1;
+    while (i2 < a.length) {
+      if (a[i] === a[i2]) {
+        a.splice(i2, 1);
+        a.splice(i, 1);
+      }
+      i2++;
+    }
+    if (a[i] !== a[i2]) {
+      unique = a[i];
+    }
+  }
+  return unique;
+}
+
+console.log(lonelyinteger([1, 2, 3, 4, 3, 2, 1]));
